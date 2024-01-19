@@ -7,4 +7,5 @@
 -------
 
 | Название | Дата | Тема | Материалы |
+| ----- | ---- | ----- | ------- |
 | Лекция 0 | 15.01.2024 | Вводная лекция | [презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture01%20slides.pdf)) |
