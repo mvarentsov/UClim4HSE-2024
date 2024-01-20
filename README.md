@@ -1,5 +1,7 @@
 # Urban climate modelling for HSE
-Курс "Моделирование климата городов" для факультета географии и геоинформационных технологий Высшей школы экономики.  Читает [Михаил Варенцов](https://www.hse.ru/org/persons/856269284) ([Истина МГУ](https://istina.msu.ru/workers-beta/10689047/) | [ResearchGate](https://www.researchgate.net/profile/Mikhail-Varentsov-2)).
+Курс "Моделирование климата городов" для факультета географии и геоинформационных технологий Высшей школы экономики.  
+
+Читает [Михаил Варенцов](https://www.hse.ru/org/persons/856269284) ([Истина МГУ](https://istina.msu.ru/workers-beta/10689047/) | [ResearchGate](https://www.researchgate.net/profile/Mikhail-Varentsov-2)).
 
 -------
 
