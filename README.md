@@ -10,7 +10,10 @@
 | Название | Дата | Тема | Материалы |
 | ----- | ---- | ----- | ------- |
 | Занятие №1 | 15.01.2024 | Вводная лекция | [презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture01%20slides.pdf)|
-| Занятие №2 | 22.01.2024 | Мониторинг городского климата | [презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture02%20slides.pdf)<br/> [Юпитер-ноутбук](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW1_example1.ipynb)|
+| Занятие №2 | 22.01.2024 | Мониторинг городского климата | [презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture02%20slides.pdf)<br/> [Notebook](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW1_example1.ipynb)|
+| Занятие №3 | 29.01.2024 | Современные подходы к анализу данных | [презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/tree/main/Presentations)<br/>[Notebook (Python recap)](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW1_python%20recap.ipynb)<br/>[Notebook (Pandas demo)](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW1_pandas_demo.ipynb)|
+
+
 
 ## Рекомендуемая литература (следите за обновлениями!)
 
