@@ -10,8 +10,10 @@
 | Название | Дата | Тема | Материалы |
 | ----- | ---- | ----- | ------- |
 | Занятие №1 | 15.01.2024 | Вводная лекция | [презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture01%20slides.pdf)|
-| Занятие №2 | 22.01.2024 | Мониторинг городского климата | [презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture02%20slides.pdf)<br/> [notebook](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW1_example1.ipynb)|
+| Занятие №2 | 22.01.2024 | Мониторинг городского климата | [презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture02%20slides.pdf)<br/> [notebook (знакомство с данными метеостанций)](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW1_example1.ipynb)|
 | Занятие №3 | 29.01.2024 | Современные подходы к анализу данных | [презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/tree/main/Presentations)<br/>[notebook (Python recap)](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW1_python%20recap.ipynb)<br/>[notebook (Pandas demo)](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW1_pandas_demo.ipynb)|
+| Занятие №4 | 05.02.2024 | Численное моделирование погоды и климата | [презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture04%20slides.pdf)<br/>[notebook (работа с реанализом ERA5)](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW1_example_ERA5.ipynb) |
+
 
 
 
@@ -26,6 +28,9 @@
 - Ren C., McGregor G. (ed.). Urban Climate Science for Planning Healthy Cities // London:  Springer. 2021.  https://link.springer.com/book/10.1007/978-3-030-87598-5 
 - Ландсберг Г. Е. Климат города //Л.: Гидрометеоиздат. 1983. 248. С. 
 - Мягков М.С., Губернский Ю.Д., Конова Л.И., Лицкевич В.К. Город, архитектура, человек и климат // Под ред. к.т.н. М.С.Мягкова. М.: «Архитектура-С». 2007. 344 с. 
+
+### Численное моделирование погоды и климата 
+- Warner T. (2011). *Numerical Weather and Climate Prediction*, Cambridge University Press, Cambridge, UK, 526 pp.
 
 ### Анализ данных 
 -	Маккинни У. Python и анализ данных / Пер. с англ. Слинкин А.А. – М: ДМК Пресс, 2015. – 482 с. ([Google Books](https://books.google.ru/books/about/Python_%D0%B8_%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.html?id=YC0kEAAAQBAJ&redir_esc=y))
