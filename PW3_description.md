@@ -1,6 +1,6 @@
 # Практическая работа №3. Мезомасштабное моделирование городского климата
 
-### Часть 1. Анализ результатов моделирования в рамках модели UrbClim
+### Часть 1. Анализ результатов регионального моделирования городского климата в рамках модели UrbClim
 * Необходим выбрать один из городов, для которых в Copernicus Data Store доступны данные [“Climate variables for cities in Europe from 2008 to 2017”](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-urban-climate-cities?tab=form), полученные в результате динамического даунскейлинга реанализа ERA5 с использованим модели пограничного слоя UrbClim [(de Ridder et al., 2015)](https://www.sciencedirect.com/science/article/abs/pii/S2212095515000024) с шагом сетки 100 м.
   ![image](https://github.com/mvarentsov/Urban-climate-modelling4HSE/assets/67764064/74eb513e-7778-4606-b0db-f9763cb2ec98)
 
@@ -14,20 +14,32 @@
 
 
 **Справка:** массив данных  [“Climate variables for cities in Europe from 2008 to 2017”](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-urban-climate-cities?tab=form) получен в результате динамического даунскейлинга реанализа ERA5 с использованим модели пограничного слоя UrbClim [(de Ridder et al., 2015)](https://www.sciencedirect.com/science/article/abs/pii/S2212095515000024) с горизонтальным шагом сетки 100 м, более подробная информация приведена в статье [(Lauwaet et al. 2023)](http://dx.doi.org/10.2139/ssrn.4406167)
-![image](https://github.com/mvarentsov/Urban-climate-modelling4HSE/assets/67764064/9047f526-7f42-42d8-ae86-76b5c52a40f9)
+![image](https://github.com/mvarentsov/Urban-climate-modelling4HSE/assets/67764064/9047f526-7f42-42d8-ae86-76b5c52a40f9).
 
+------
 
 ### Часть 2. Работа с моделью городского полога TEB (Town Energy Balance)
 Внимание: выполнение этой части задания предполагается на Google Colab с использованием рабочей папки на Google Drive (необходимо иметь аккаунт).  
 * Необходимо запустить скрипт сборки и запуска модели TEB [PW3_ERA5_to_TEB.ipynb](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW3_ERA5_to_TEB.ipynb) в Google Colab с использованием доступных по умолчанию данных для Москвы, убедиться в его штатной работе. В ходе работы скрипта в вашем Google Drive будет создана директория *TEB_open_source_v3_sfx8.1_orig_namelist*, куда будет клонирован репозиторий. Рекомендуется скопировать ее содержимое в другую директорию и далее работать в ней. 
-* На основе скачанных ранее для практической работы №1 данных реанализа ERA5 подготовить входные данные (метеорологический форсинг) для модели TEB для вашего города, используя скрипт [PW3_ERA5_to_TEB.ipynb](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW3_ERA5_to_TEB.ipynb). Полученные текстовые файлы с форсингом нужно скопировать в директорию папку модели на  Google Drivе, например в директорию "input_MyCity" (cv/ gj .
+* На основе скачанных ранее для [практической работы №1](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/PW1_description.md) данных реанализа ERA5 подготовить входные данные (метеорологический форсинг) для модели TEB для вашего города, используя скрипт [PW3_ERA5_to_TEB.ipynb](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW3_ERA5_to_TEB.ipynb). Полученные текстовые файлы с форсингом нужно скопировать в директорию папку модели на  Google Drivе, например в директорию "input_MyCity".
   
-* Адаптировать конфигурацию модели TEB для вашего города. Для этого неообходимо:
-    - Изменить в неймлисте в нем местоположение, дату, а также параметры застройки (задать их экспертным образом).
+* Адаптировать конфигурацию модели TEB для выбранного города. Для этого неообходимо:
+    - Задать в неймлисте (конфигурационном файле) *src_driver/namelist_forcing.nml* имя папки с форсингом, географические координаты, дату начала расчета, количество шагов по времени в файлах с форсингом.
+      ![image](https://github.com/mvarentsov/Urban-climate-modelling4HSE/assets/67764064/a15adb84-5c7d-4974-bfeb-0881f8461523)
 
-* **To be continued …**
+    - Задать в неймлисте *src_driver/namelist.nml* релевантные для выбранного района параметры застройки (определяются экспертным способом, можно опираться на резльтаты практической работы №2). Полное описание всех переменных неймлистов доступно [тут](https://github.com/mkolennikova/TEB_open_source_v3_sfx8.1_orig_namelist/blob/main/%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20TEB%20(%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5).xlsx).
+ 
+      ![image](https://github.com/mvarentsov/Urban-climate-modelling4HSE/assets/67764064/97284178-0cd9-4a57-aeb1-fba26c6a78e1)
 
-**Справка:** модель гордского полога (гордского каньона) TEB (Town Energy Ballance) - первая из городских параметризаций [(Masson, 2000)](https://link.springer.com/article/10.1023/A:1002463829265). В рамках задания предпологается запускать модель TEB в оффлайн режиме, т.е. когда характеристики атмосферы над городом задаются в качестве форсинга. 
+    - Выполнить расчет с моделью, адаптированной для выбранного города. Результаты расчетов будут записаны в папку *output*.
+      ![image](https://github.com/mvarentsov/Urban-climate-modelling4HSE/assets/67764064/735c0833-bcb0-481c-ad01-96e3c8719bc7)
+
+    - Построить графики расчитанной моделью температуры различных элементов городского каньона (температуры воздуха в каньоне T_CANYON, температура отдельных поверхностей T_ROAD1, T_WALLA1, T_WALLB1, T_ROOF1, температуры внутри здания TI_BLD) в сравнении с температурой воздуха над городом из данных форсинга.
+    - Провести дополнительный эксперимент на чувствительность, изменив 1 или несколько логически связанных параметров модели (например, изменить альбедо поверхности или ориентацию (направление) каньона). Сравнить результаты контрольного эксперимента с результатами экспреримета с измененными параметрами. 
+ 
+
+
+**Справка:** модель гордского полога (городского каньона) TEB (Town Energy Ballance) - первая из городских параметризаций для мезомасштабных моделей атмосферы [(Masson, 2000)](https://link.springer.com/article/10.1023/A:1002463829265). В рамках задания предпологается запускать модель TEB в оффлайн режиме, т.е. когда характеристики атмосферы над городом задаются в качестве форсинга. 
 
 ![image](https://github.com/mvarentsov/Urban-climate-modelling4HSE/assets/67764064/cc7b3819-369d-41f6-a9b0-13e7e58e712e)
 
