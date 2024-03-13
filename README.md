@@ -17,7 +17,7 @@
 | Занятие №6 | 26.02.2024 | Мезомасштабное моделирование для городов (семинар)  |
 | Занятие №7 | 29.02.2024 | Мезомасштабное моделирование для городов (семинар), разбор практической работы №1 |
 | Занятие №8 | 04.03.2024 | Комфортность городского климата (часть 1), разбор практической работы №2. |[презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture08%20slides.pdf)|
-| Занятие №9 | 04.03.2024 | Комфортность городского климата (часть 2), разбор практической работы №2. |[презентация]([https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture08%20slides.pdf](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture09%20slides.pdf))<br/>[notebook (расчет индексов термического комфорта в Python)](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW4_example.ipynb)|
+| Занятие №9 | 04.03.2024 | Комфортность городского климата (часть 2), разбор практической работы №2. |[презентация](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Presentations/Lecture09%20slides.pdf)<br/>[notebook (расчет индексов термического комфорта в Python)](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW4_example.ipynb)|
 
 
 
