@@ -26,7 +26,8 @@
 
 ### Часть 2. Раcчет индексов термического комфорта в Python
 
-* Выполнить расчет индексов термического комфорта для вашего города для открытой площадки (без застройки) с использованием библиотеки [biometeo](https://pypi.org/project/biometeo/0.2.1/)  для python [([Yung‑Chang Chen, 2023])](https://www.nature.com/articles/s41598-023-47388-y), по тому же набору данных, который использовался в RayMan
+* Выполнить расчет индексов термического комфорта для вашего города для открытой площадки (без застройки) с использованием библиотеки [biometeo](https://pypi.org/project/biometeo/0.2.1/)  для python [([Yung‑Chang Chen, 2023])](https://www.nature.com/articles/s41598-023-47388-y), по тому же набору данных, который использовался в RayMan.
+  </br>Пример работы с библиотеой biometeo: [PW4_example.ipynb](https://github.com/mvarentsov/Urban-climate-modelling4HSE/blob/main/Practice/PW4_example.ipynb)
 * Сравнить в формате графиков и диаграмм рассеяния результаты расчетов MRT, PET и/или UTCI, а также суммарной солнечной радиации (global radiation) средствами biometeo и RayMan 
 * Выполнить расчет индексов термического комфорта с использованием библиотеки biometeo  для python по данным реанализа ERA5:
     - За период не менее 1 года
